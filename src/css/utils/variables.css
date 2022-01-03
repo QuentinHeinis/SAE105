@@ -1,0 +1,16 @@
+:root{
+    /* Color styles */
+--bleu: rgba(43, 165, 212, 1);
+--rouge: rgba(246, 59, 73, 1);
+--bleuf: rgba(22, 59, 128, 1);
+--white: rgba(255, 255, 255, 1);
+--black: rgba(0, 0, 0, 1);
+
+/* Text-size styles */
+/* base */
+--body: 0.94rem;
+--title: 1.25rem;
+--citation: 0.94rem;
+--oeuvre: 1.25rem;
+--h1: 1.12rem;
+}
