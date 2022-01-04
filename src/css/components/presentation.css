@@ -1,0 +1,20 @@
+.presentation{
+    position: relative;
+
+}
+
+.presentation__txt{
+    margin-left: 58px;
+    margin-right: 58px;
+    text-align: center;
+}
+
+.presentation::after{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: var(--white);
+    position: absolute;
+    left: 32px;
+    top: 0;
+}
