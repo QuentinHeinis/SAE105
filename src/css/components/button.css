@@ -1,0 +1,45 @@
+.button__place{
+    width: 100vw;
+    position: relative;
+}
+
+
+.button--left{
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.button--left::after{
+    content: '🡐';
+    
+}
+
+.button--right{
+    position: absolute;
+    color: var(--white);
+    text-decoration: none;
+    right: 10px;
+}
+
+.button--right::after{
+    content: '🡒';
+}
+
+.button--left::after, .button--right::after{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-color: white;
+    top: 20px;
+    left: 50%;
+    right: 50%;   
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
