@@ -31,3 +31,7 @@ h3{
     font-size: var(--oeuvre);
 }
 
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}

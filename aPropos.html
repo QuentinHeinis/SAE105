@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{isOpen: false}" :class="isOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
-    <title>à propos</title>
+    <title>A propos</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" :class="isOpen && 'header--menu-open'">
         <div class="header__start">
             <img src="./public/icons/Groupedemasques31.webp" alt="">
         </div>
         <img class="header__name" src="./public/icons/TitreSite.webp" alt="">
-        <div class="header__end">
+        <div class="header__end"  @pointerdown="isOpen = !isOpen">
             <img src="./public/icons/Group43.webp" alt="">
         </div>
         
@@ -25,7 +26,7 @@
             <path d="M1 15.3195C1 15.3195 41 7.81954 78.5 4.31953C116 0.819522 138 2.31953 138 2.31953C138 2.31953 159.5 4.31952 162 7.81953C164.5 11.3195 162 13.8195 162 13.8195" stroke="#28A5D7" stroke-width="3"/>
             </svg>
         
-        <nav class="header__menu menu">
+        <nav class="header__menu menu" :class="isOpen && 'menu--open'">
             <ul class="menu__list">
                 <li class="menu__item"><a href="#"><img src="./public/icons/Groupedemasques17.png" alt=""><h3>Accueil</h3></a></li>
                 <li class="menu__item"><a href="./histoireRap.html"><img src="./public/icons/Groupedemasques18.png" alt=""><h3>Histoire du rap</h3></a></li>

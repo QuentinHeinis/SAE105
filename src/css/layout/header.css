@@ -11,6 +11,9 @@
     z-index: 15;
 }
 
+.header--menu-open .header__under, .header--menu-open .header__under--design {
+    visibility: hidden;
+}
 .header__under{
     position: absolute;
     left: 50%;
