@@ -1,0 +1,73 @@
+.article__title::after{
+    content: url(/public/icons/microphone1.png);
+    position: relative;
+    display: inline-flex;
+    margin-left: 5px;
+    height: 27px;
+    width: 27px;
+    margin-right: 22px;
+}
+
+.article__title{
+    margin-left: 20px;
+    
+}
+
+.article__Main-title{
+    margin-left: 16vw;
+    margin-right: 16vw;
+    text-align: center;
+}
+
+.article__txt{
+    margin-right: 69px;
+    margin-left: 20px;
+}
+
+
+.txt__design{
+    position: relative;
+}
+
+
+
+.article__img{
+    display: flex;
+    height: 200px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+.article__designR, .article__designB, .article__designBF{ position: relative; }
+
+.article__designR::after, .article__designB::after, .article__designBF::after{
+    position: absolute;
+    content: '';
+    
+    width: 28px;
+    height: 100%;
+    top: 0;
+    right: 13px;
+}
+
+.article__designR::after{
+    background-color: var(--rouge);
+}
+.article__designB::after{
+    background-color: var(--bleu);
+}
+.article__designBF::after{
+    background-color: var(--bleuf);
+}
+
+
+.article__title3{
+    background-color: var(--white);
+    height: 45px;
+    width: 325px;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
