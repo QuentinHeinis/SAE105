@@ -17,8 +17,7 @@ main h1{
 h2{
     font-family: 'Lobster two';
     font-size: var(--title);
-    margin-left: 22px;
-    margin-right: 58px;
+
 }
 
 p{
