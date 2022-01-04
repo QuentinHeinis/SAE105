@@ -1,0 +1,28 @@
+.reseaux{
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+}
+
+
+.reseaux__title{
+    text-align: center;
+}
+
+.reseaux__box{
+    background-color: var(--white);
+    width: 205px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.reseaux__link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
