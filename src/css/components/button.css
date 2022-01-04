@@ -13,7 +13,7 @@
 }
 
 .button--left::after{
-    content: "🡸";
+    content: "→";
     
 }
 
@@ -25,7 +25,7 @@
 }
 
 .button--right::after{
-    content: '🡺';
+    content: '←';
 }
 
 .button--left::after, .button--right::after{
