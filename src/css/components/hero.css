@@ -16,3 +16,11 @@
     left: 0;
     right: 0;
 }
+
+.hero__background{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color:  var(--bleu);
+
+}
