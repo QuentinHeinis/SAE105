@@ -8,6 +8,9 @@ body{
     color: var(--white);
     font-family: 'Roboto', sans-serif;
 }
+.contactpage{
+    background-color: var(--bleuf);
+}
 
 main h1{
     font-family: 'Roboto', sans-serif;

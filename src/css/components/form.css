@@ -1,0 +1,48 @@
+.form{
+    background-color: black;
+    
+    width: 298px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 29px;
+    padding-right: 21px;
+    margin-bottom: 40px;
+}
+
+.form__title{
+    font-size: var(--h1);
+    font-family: 'Lobster two';
+    width: 100%;
+    display: block;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.form__style{
+    border: var(--rouge) 4px solid;
+    border-bottom-right-radius: 20px;
+    width: 243px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.form__name .form__style{
+    width: 187px;
+}
+
+.form__msg .form__style{
+    height: 140px;
+}
+
+
+.form__btn input{
+    width: 97px;
+    height: 42px;
+    background-color: white;
+    border: var(--rouge) 4px solid;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
