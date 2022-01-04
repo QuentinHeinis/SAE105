@@ -1,5 +1,7 @@
 .article__title::after{
-    content: url(/public/icons/microphone1.png);
+    content: '';
+    background-image: url(/public/icons/microphone1.png);
+    background-size:contain ;
     position: relative;
     display: inline-flex;
     margin-left: 5px;
