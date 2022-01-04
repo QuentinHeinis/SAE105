@@ -10,7 +10,7 @@
 
 .article__title{
     margin-left: 20px;
-    
+    margin-bottom: 15px;
 }
 
 .article__Main-title{
@@ -22,6 +22,8 @@
 .article__txt{
     margin-right: 69px;
     margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -36,6 +38,8 @@
     height: 200px;
     margin-left:auto;
     margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -65,9 +69,73 @@
 .article__title3{
     background-color: var(--white);
     height: 45px;
-    width: 325px;
+    width: 86vw;
     color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.uniqueDesign{
+    position: relative;
+}
+
+.uniqueDesign::after{
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 28px;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.article__quotes{
+    position: relative;
+    width: 140px;
+    margin-left: 52px;
+}
+
+.article__quotes::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    background-color: var(--white);
+    height: 100%;
+    left: -27px;
+}
+
+.article__quotes2::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    background-color: var(--white);
+    height: 100%;
+    right: -10px;
+    top: 0;
+}
+
+
+.article__quotes .article__txt{
+    padding: 0;
+    margin: 0;
+}
+
+.article__quotes2{
+    position: relative;
+    width: 140px;
+    margin-left: auto;
+    margin-right: 21vw;
+}
+
+.article__quotes2 .article__txt{
+    padding: 0;
+    margin: 0;
+}
+
+
+.article__img--fs{
+    margin-top: 45px;
+    margin-bottom: 30px;
 }
