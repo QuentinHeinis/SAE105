@@ -1,8 +1,15 @@
 .hero{
     position: relative;
     z-index: 0;
+    
 }
 
+.hero__img--article{
+    max-height: 130vw;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+}
 .hero__img{
     position: relative;
 }
@@ -26,3 +33,4 @@
     background-color:  var(--bleu);
 
 }
+
