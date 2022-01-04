@@ -12,6 +12,7 @@
 .reseaux__box{
     background-color: var(--white);
     width: 205px;
+    height: 52px;
     display: flex;
     justify-content: space-around;
     align-items: center;

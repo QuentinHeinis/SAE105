@@ -13,8 +13,7 @@
     padding-bottom: 62px;
     position: relative;
     margin-top: 65px;
-    font-size: var(--h1);
-    bottom: 0;
+    font-size: var(--h1);   
 }
 
 .footer__txt{
