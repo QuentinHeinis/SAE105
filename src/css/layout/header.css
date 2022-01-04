@@ -1,0 +1,69 @@
+.header{
+    width: 100vw;
+    height: 77px;
+    background-color: var(--white);
+    border-bottom: var(--bleu) 5px solid;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 9px;
+    padding-left: 9px;
+}
+
+.header__under{
+    position: absolute;
+    left: 50%;
+    right: 50%;   
+    transform: translateX(-50%);
+    top: 50px;
+    height: 43.5px;
+    width: 162px;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    align-items: center;    
+    clip-path: path("M1 0H163V35.5L159.313 34.4156C150.493 31.8216 141.318 30.6419 132.129 30.9203L80 32.5L1 43.5V0Z");
+   
+}
+
+.header__under--design{
+    position: absolute;
+    left: 50%;
+    right: 50%;   
+    transform: translateX(-50%);
+    top: 78px;
+}
+
+.header__pageName{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 5px;
+    font-weight: bold;  
+    font-family: 'roboto', sans-serif;
+    font-size: var(--h1);
+}
+
+.header__start{
+    position: relative;
+    display: flex;
+    height: 51px;
+    margin-top: 9px;
+}
+.header__end{
+    position: relative;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    margin-top: 15px;
+}
+
+.header__name{
+    width: 157px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    right: 50%;   
+    transform: translateX(-47%);
+    top: 17px;
+}
