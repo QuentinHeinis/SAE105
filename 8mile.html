@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="./src/js/fonction.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <title>8 Mile</title>
 </head>
@@ -28,7 +30,7 @@
         
         <nav class="header__menu menu" :class="isOpen && 'menu--open'">
             <ul class="menu__list">
-                <li class="menu__item"><a href="#"><img src="./public/icons/Groupedemasques17.png" alt=""><h3>Accueil</h3></a></li>
+                <li class="menu__item"><a href="/"><img src="./public/icons/Groupedemasques17.png" alt=""><h3>Accueil</h3></a></li>
                 <li class="menu__item"><a href="./histoireRap.html"><img src="./public/icons/Groupedemasques18.png" alt=""><h3>Histoire du rap</h3></a></li>
                 <li class="menu__item"><a href="./8mile.html"><img src="./public/icons/Groupedemasques19.png" alt=""><h3>8 Mile</h3></a></li>
                 <li class="menu__item"><a href="./eminem&dre.html"><img src="./public/icons/Groupedemasques20.png" alt=""></a></li>
@@ -157,24 +159,37 @@
                 <video class="article__video" src=""></video>
                 <h3 class="article__title3">Liste des Films</h3>
             </div>
-            <div class="article__carrousel carrousel">
-                <div class="carrousel__item">
-                    <img class="carrousel__img" src="/public/img/Groupe_de masques_33.webp" alt="">
-                    <p class="carrousel__txt">La Main sur le berceau (1992)</p>
-                </div>
-                <div class="carrousel__item">
-                    <img class="carrousel__img" src="/public/img/Groupe-de-masques-34.webp" alt="">
-                    <p class="carrousel__txt">L.A. Confidential (1997)</p>
-                </div>
-                <div class="carrousel__item">
-                    <img class="carrousel__img" src="/public/img/Groupe-de-masques-35.webp" alt="">
-                    <p class="carrousel__txt">In Her Shoes (2005)</p>
-                </div>
-                <div class="carrousel__item">
-                    <img class="carrousel__img" src="/public/img/Groupe-de-masques-36.webp" alt="">
-                    <p class="carrousel__txt">Chasing Mavericks (2012)</p>
+            <div class="article__carrousel carrousel" x-on:mouseover="monterLegende();"
+            x-on:mouseleave="descendreLegende();">
+                <div class="carrousel__items">
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe_de masques_33.webp" alt="">
+                        <p class="carrousel__txt">La Main sur le
+                            berceau
+                            (1992)</p>
+                    </div>
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe-de-masques-34.webp" alt="">
+                        <p class="carrousel__txt">L.A. Confidential
+                            (1997)</p>
+                    </div>
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe-de-masques-35.webp" alt="">
+                        <p class="carrousel__txt">In Her Shoes
+                            (2005)</p>
+                    </div>
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe-de-masques-36.webp" alt="">
+                        <p class="carrousel__txt">Chasing Mavericks
+                            (2012)</p>
+                    </div>
                 </div>
             </div>
+            <script>
+			
+                carrousel();
+                
+            </script>
 
         </section>
         <div class="button__place">
