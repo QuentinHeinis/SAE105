@@ -1,6 +1,9 @@
 .hero{
     position: relative;
     z-index: 0;
+    overflow: hidden;
+    width: 100vw;
+
 }
 
 .hero__img--article{
