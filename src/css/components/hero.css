@@ -15,9 +15,7 @@
 
 .hero__title{
     position: absolute;
-    bottom: 0;
-    top: 0;
-    transform: translateY(30%);
+    top: 30%;
     text-align: center;
     left: 0;
     right: 0;
