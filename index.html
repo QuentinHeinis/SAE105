@@ -38,8 +38,9 @@
     </header>
     <main>
 
-        <div class="hero">
-            <img class="hero__img" src="/public/img/2520479691.webp" alt="">
+        <div class="hero" x-data="{imgg: true}" :class="!imgg && 'altImg'">
+            <img class="hero__img img1" src="/public/img/2520479691.webp" alt="" @pointerdown="imgg = !imgg">
+            <img class="hero__img img2" src="./public/img/Rectangle63.webp" alt="" @pointerdown="imgg = !imgg">
             <h1 class="hero__title">Le rap,<br> l'histoire d'un style</h1>
         </div>
 
