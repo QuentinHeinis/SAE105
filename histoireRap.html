@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="./src/js/fonction.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Histoire du rap</title>
 </head>
@@ -174,24 +176,32 @@
                 </p>
                 <h3 class="article__title3">Liste des Livres</h3>
             </div>
-            <div class="article__carrousel">
-                <div class="carrousel__item">
-                    <img src="./public/img/Groupe_de masques_26_1.webp" alt="">
-                    <p class="carrousel__txt">Il rap. L'offensiva metropolitana (1994)</p>
-                </div>
-                <div class="carrousel__item">
-                    <img src="./public/img/Groupe-de-masques-27.webp" alt="">
-                    <p class="carrousel__txt">Eminem: le prince blanc du hip-hop (2005)</p>
-                </div>
-                <div class="carrousel__item">
-                    <img src="./public/img/Groupe-de-masques-28.webp" alt="">
-                    <p class="carrousel__txt">Le dictionnaire du rap (2007)</p>
-                </div>
-                <div class="carrousel__item">
-                    <img src="./public/img/Groupe-de-masques-29.webp" alt="">
-                    <p class="carrousel__txt">Rap stories (2008)</p>
+            <div class="article__carrousel carrousel" x-on:mouseover="monterLegende();"
+            x-on:mouseleave="descendreLegende();">
+                <div class="carrousel__items">
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe_de masques_26_1.webp" alt="">
+                        <p class="carrousel__txt">Il rap. L'offensiva metropolitana (1994)</p>
+                    </div>
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe-de-masques-27.webp" alt="">
+                        <p class="carrousel__txt">Eminem: le prince blanc du hip-hop (2005)</p>
+                    </div>
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe-de-masques-28.webp" alt="">
+                        <p class="carrousel__txt">Le dictionnaire du rap (2007)</p>
+                    </div>
+                    <div class="carrousel__item">
+                        <img src="./public/img/Groupe-de-masques-29.webp" alt="">
+                        <p class="carrousel__txt">Rap stories (2008)</p>
+                    </div>
                 </div>
             </div>
+            <script>
+			
+                carrousel();
+                
+            </script>
         </section>
         <div class="button__place">
             <a class="button--right" href="./8mile.html">8 Mile</a>
